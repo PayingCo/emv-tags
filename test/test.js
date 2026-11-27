@@ -1,0 +1,12 @@
+const assert = require('assert'), m = require('../src');
+assert.strictEqual(m.lookupTag('9f26').tag, '9F26');
+assert.ok(m.lookupTag('5A').name.includes('PAN'));
+assert.strictEqual(m.lookupTag('ZZ'), undefined);
+assert.ok(m.searchTags('cryptogram').length > 0);
+const t = m.parseTlv('6F0F8407A0000000031010A50450024142');
+assert.strictEqual(t[0].tag, '6F'); assert.strictEqual(t[0].children.length, 2); assert.strictEqual(t[0].children[1].children[0].tag, '50');
+assert.throws(() => m.parseTlv('9F26'));
+assert.throws(() => m.parseTlv('5A05AA'));
+assert.ok(Array.isArray(m.decodeBits('AIP', '5C00')));
+assert.strictEqual(m.lookupAid('A0000000031010').scheme, 'Visa');
+console.log('ok');

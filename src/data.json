@@ -1,0 +1,988 @@
+{
+ "tags": {
+  "41": {
+   "name": "Country code & national data"
+  },
+  "42": {
+   "name": "Issuer Identification Number (IIN)"
+  },
+  "50": {
+   "name": "Application Label",
+   "ascii": true
+  },
+  "51": {
+   "name": "Path"
+  },
+  "52": {
+   "name": "Command-to-perform"
+  },
+  "53": {
+   "name": "Discretionary data (or template)"
+  },
+  "56": {
+   "name": "Track 1 Data"
+  },
+  "57": {
+   "name": "Track 2 Equivalent Data"
+  },
+  "61": {
+   "name": "Application Template",
+   "constructed": true
+  },
+  "70": {
+   "name": "READ RECORD Response / EMV Template",
+   "constructed": true
+  },
+  "71": {
+   "name": "Issuer Script Template 1",
+   "constructed": true
+  },
+  "72": {
+   "name": "Issuer Script Template 2",
+   "constructed": true
+  },
+  "73": {
+   "name": "Directory Discretionary Template",
+   "constructed": true
+  },
+  "77": {
+   "name": "Response Message Template Format 2",
+   "constructed": true
+  },
+  "80": {
+   "name": "Response Message Template Format 1"
+  },
+  "81": {
+   "name": "Amount, Authorised (Binary)"
+  },
+  "82": {
+   "name": "Application Interchange Profile (AIP)",
+   "decoder": "AIP"
+  },
+  "83": {
+   "name": "Command Template"
+  },
+  "84": {
+   "name": "Dedicated File (DF) Name"
+  },
+  "86": {
+   "name": "Issuer Script Command"
+  },
+  "87": {
+   "name": "Application Priority Indicator"
+  },
+  "88": {
+   "name": "Short File Identifier (SFI)"
+  },
+  "89": {
+   "name": "Authorisation Code"
+  },
+  "90": {
+   "name": "Issuer Public Key Certificate"
+  },
+  "91": {
+   "name": "Issuer Authentication Data"
+  },
+  "92": {
+   "name": "Issuer Public Key Remainder"
+  },
+  "93": {
+   "name": "Signed Static Application Data (SSAD)"
+  },
+  "94": {
+   "name": "Application File Locator (AFL)"
+  },
+  "95": {
+   "name": "Terminal Verification Results (TVR)",
+   "decoder": "TVR"
+  },
+  "97": {
+   "name": "Transaction Certificate Data Object List (TDOL)",
+   "dol": true
+  },
+  "98": {
+   "name": "Transaction Certificate (TC) Hash Value"
+  },
+  "99": {
+   "name": "Transaction Personal Identification Number (PIN) Data"
+  },
+  "06": {
+   "name": "Object Identifier (OID)"
+  },
+  "4F": {
+   "name": "Application Identifier (AID): card"
+  },
+  "5A": {
+   "name": "Application Primary Account Number (PAN)"
+  },
+  "5F20": {
+   "name": "Cardholder Name",
+   "ascii": true
+  },
+  "5F24": {
+   "name": "Application Expiration Date (YYMMDD)"
+  },
+  "5F25": {
+   "name": "Application Effective Date (YYMMDD)"
+  },
+  "5F28": {
+   "name": "Issuer Country Code"
+  },
+  "5F2A": {
+   "name": "Transaction Currency Code"
+  },
+  "5F2D": {
+   "name": "Language Preference",
+   "ascii": true
+  },
+  "5F30": {
+   "name": "Service Code"
+  },
+  "5F34": {
+   "name": "Application PAN Sequence Number"
+  },
+  "5F36": {
+   "name": "Transaction Currency Exponent"
+  },
+  "5F50": {
+   "name": "Issuer URL",
+   "ascii": true
+  },
+  "5F53": {
+   "name": "International Bank Account Number (IBAN)"
+  },
+  "5F54": {
+   "name": "Bank Identifier Code (BIC)",
+   "ascii": true
+  },
+  "5F55": {
+   "name": "Issuer Country Code (alpha2)",
+   "ascii": true
+  },
+  "5F56": {
+   "name": "Issuer Country Code (alpha3)",
+   "ascii": true
+  },
+  "5F57": {
+   "name": "Account Type"
+  },
+  "6F": {
+   "name": "File Control Information (FCI) Template",
+   "constructed": true
+  },
+  "8A": {
+   "name": "Authorisation Response Code (ARC)",
+   "ascii": true
+  },
+  "8C": {
+   "name": "Card Risk Management Data Object List 1 (CDOL1)",
+   "dol": true
+  },
+  "8D": {
+   "name": "Card Risk Management Data Object List 2 (CDOL2)",
+   "dol": true
+  },
+  "8E": {
+   "name": "Cardholder Verification Method (CVM) List",
+   "decoder": "CVM"
+  },
+  "8F": {
+   "name": "Certification Authority Public Key Index (CA PKI)"
+  },
+  "9A": {
+   "name": "Transaction Date (YYMMDD)"
+  },
+  "9B": {
+   "name": "Transaction Status Information (TSI)",
+   "decoder": "TSI"
+  },
+  "9C": {
+   "name": "Transaction Type"
+  },
+  "9D": {
+   "name": "Directory Definition File (DDF) Name"
+  },
+  "9F01": {
+   "name": "Acquirer Identifier"
+  },
+  "9F02": {
+   "name": "Amount, Authorised (Numeric)"
+  },
+  "9F03": {
+   "name": "Amount, Other (Numeric)"
+  },
+  "9F04": {
+   "name": "Amount, Other (Binary)"
+  },
+  "9F05": {
+   "name": "Application Discretionary Data"
+  },
+  "9F06": {
+   "name": "Application Identifier (AID): terminal"
+  },
+  "9F07": {
+   "name": "Application Usage Control (AUC)"
+  },
+  "9F08": {
+   "name": "Application Version Number (ICC)"
+  },
+  "9F09": {
+   "name": "Application Version Number (Terminal)"
+  },
+  "9F0B": {
+   "name": "Cardholder Name Extended",
+   "ascii": true
+  },
+  "9F0D": {
+   "name": "Issuer Action Code: Default"
+  },
+  "9F0E": {
+   "name": "Issuer Action Code: Denial"
+  },
+  "9F0F": {
+   "name": "Issuer Action Code: Online"
+  },
+  "9F10": {
+   "name": "Issuer Application Data (IAD)"
+  },
+  "9F11": {
+   "name": "Issuer Code Table Index"
+  },
+  "9F12": {
+   "name": "Application Preferred Name",
+   "ascii": true
+  },
+  "9F13": {
+   "name": "Last Online ATC Register"
+  },
+  "9F14": {
+   "name": "Lower Consecutive Offline Limit"
+  },
+  "9F15": {
+   "name": "Merchant Category Code (MCC)"
+  },
+  "9F16": {
+   "name": "Merchant Identifier",
+   "ascii": true
+  },
+  "9F17": {
+   "name": "PIN Try Counter"
+  },
+  "9F18": {
+   "name": "Issuer Script Identifier"
+  },
+  "9F1A": {
+   "name": "Terminal Country Code"
+  },
+  "9F1B": {
+   "name": "Terminal Floor Limit"
+  },
+  "9F1C": {
+   "name": "Terminal Identification",
+   "ascii": true
+  },
+  "9F1D": {
+   "name": "Terminal Risk Management Data"
+  },
+  "9F1E": {
+   "name": "Interface Device (IFD) Serial Number",
+   "ascii": true
+  },
+  "9F1F": {
+   "name": "Track 1 Discretionary Data",
+   "ascii": true
+  },
+  "9F20": {
+   "name": "Track 2 Discretionary Data",
+   "ascii": true
+  },
+  "9F21": {
+   "name": "Transaction Time (HHMMSS)"
+  },
+  "9F22": {
+   "name": "Certification Authority Public Key Index (Terminal)"
+  },
+  "9F23": {
+   "name": "Upper Consecutive Offline Limit"
+  },
+  "9F26": {
+   "name": "Application Cryptogram (ARQC/TC/AAC)"
+  },
+  "9F27": {
+   "name": "Cryptogram Information Data (CID)",
+   "decoder": "CID"
+  },
+  "9F2A": {
+   "name": "Kernel Identifier"
+  },
+  "9F2D": {
+   "name": "ICC PIN Encipherment Public Key Certificate"
+  },
+  "9F2E": {
+   "name": "ICC PIN Encipherment Public Key Exponent"
+  },
+  "9F2F": {
+   "name": "ICC PIN Encipherment Public Key Remainder"
+  },
+  "9F32": {
+   "name": "Issuer Public Key Exponent"
+  },
+  "9F33": {
+   "name": "Terminal Capabilities",
+   "decoder": "TERMCAP"
+  },
+  "9F34": {
+   "name": "Cardholder Verification Method (CVM) Results"
+  },
+  "9F35": {
+   "name": "Terminal Type"
+  },
+  "9F36": {
+   "name": "Application Transaction Counter (ATC)"
+  },
+  "9F37": {
+   "name": "Unpredictable Number (UN)"
+  },
+  "9F38": {
+   "name": "Processing Options Data Object List (PDOL)",
+   "dol": true
+  },
+  "9F39": {
+   "name": "Point-of-Service (POS) Entry Mode"
+  },
+  "9F3A": {
+   "name": "Amount, Reference Currency"
+  },
+  "9F3B": {
+   "name": "Application Reference Currency"
+  },
+  "9F3C": {
+   "name": "Transaction Reference Currency Code"
+  },
+  "9F3D": {
+   "name": "Transaction Reference Currency Exponent"
+  },
+  "9F40": {
+   "name": "Additional Terminal Capabilities"
+  },
+  "9F41": {
+   "name": "Transaction Sequence Counter"
+  },
+  "9F42": {
+   "name": "Application Currency Code"
+  },
+  "9F43": {
+   "name": "Application Reference Currency Exponent"
+  },
+  "9F44": {
+   "name": "Application Currency Exponent"
+  },
+  "9F45": {
+   "name": "Data Authentication Code"
+  },
+  "9F46": {
+   "name": "ICC Public Key Certificate"
+  },
+  "9F47": {
+   "name": "ICC Public Key Exponent"
+  },
+  "9F48": {
+   "name": "ICC Public Key Remainder"
+  },
+  "9F49": {
+   "name": "Dynamic Data Object List (DDOL)",
+   "dol": true
+  },
+  "9F4A": {
+   "name": "Static Data Authentication Tag List"
+  },
+  "9F4B": {
+   "name": "Signed Dynamic Application Data (SDAD)"
+  },
+  "9F4C": {
+   "name": "ICC Dynamic Number"
+  },
+  "9F4D": {
+   "name": "Log Entry"
+  },
+  "9F4E": {
+   "name": "Merchant Name and Location",
+   "ascii": true
+  },
+  "9F4F": {
+   "name": "Log Format",
+   "dol": true
+  },
+  "9F50": {
+   "name": "Offline Accumulator Balance"
+  },
+  "9F51": {
+   "name": "Application Currency Code (proprietary)"
+  },
+  "9F53": {
+   "name": "Consecutive Transaction Counter Int. Limit (CTCIL)"
+  },
+  "9F54": {
+   "name": "Cumulative Total Transaction Amount Limit (CTTAL)"
+  },
+  "9F55": {
+   "name": "Geographic Indicator"
+  },
+  "9F56": {
+   "name": "Issuer Authentication Indicator"
+  },
+  "9F57": {
+   "name": "Issuer Country Code"
+  },
+  "9F58": {
+   "name": "Lower Consecutive Counter Limit"
+  },
+  "9F59": {
+   "name": "Upper Consecutive Counter Limit"
+  },
+  "9F5A": {
+   "name": "Application Program Identifier (Program ID)"
+  },
+  "9F5B": {
+   "name": "Issuer Script Results"
+  },
+  "9F5C": {
+   "name": "Cumulative Total Transaction Amount Upper Limit"
+  },
+  "9F66": {
+   "name": "Terminal Transaction Qualifiers (TTQ)",
+   "decoder": "TTQ"
+  },
+  "9F67": {
+   "name": "Number of Locations / NATC (Track2)"
+  },
+  "9F68": {
+   "name": "Mag-stripe CVM List (card)"
+  },
+  "9F69": {
+   "name": "Card Authentication Related Data / UDOL"
+  },
+  "9F6B": {
+   "name": "Track 2 Data (Mag-stripe)"
+  },
+  "9F6C": {
+   "name": "Card Transaction Qualifiers (CTQ)",
+   "decoder": "CTQ"
+  },
+  "9F6E": {
+   "name": "Form Factor Indicator / Third Party Data"
+  },
+  "9F74": {
+   "name": "VLP Issuer Authorisation Code"
+  },
+  "9F7C": {
+   "name": "Merchant Custom Data / Customer Exclusive Data (CED)"
+  },
+  "A5": {
+   "name": "FCI Proprietary Template",
+   "constructed": true
+  },
+  "BF0C": {
+   "name": "FCI Issuer Discretionary Data",
+   "constructed": true
+  },
+  "DF8104": {
+   "name": "Balance Read Before Gen AC"
+  },
+  "DF8105": {
+   "name": "Balance Read After Gen AC"
+  },
+  "DF8129": {
+   "name": "Outcome Parameter Set"
+  }
+ },
+ "bitDecoders": {
+  "AIP": {
+   "len": 2,
+   "bits": [
+    [
+     0,
+     6,
+     "SDA supported"
+    ],
+    [
+     0,
+     5,
+     "DDA supported"
+    ],
+    [
+     0,
+     4,
+     "Cardholder verification supported"
+    ],
+    [
+     0,
+     3,
+     "Terminal risk management to be performed"
+    ],
+    [
+     0,
+     2,
+     "Issuer authentication supported"
+    ],
+    [
+     0,
+     1,
+     "On-device cardholder verification supported"
+    ],
+    [
+     0,
+     0,
+     "CDA supported"
+    ],
+    [
+     1,
+     7,
+     "EMV mode supported (contactless)"
+    ],
+    [
+     1,
+     6,
+     "Mag-stripe mode supported (contactless)"
+    ]
+   ]
+  },
+  "TVR": {
+   "len": 5,
+   "bits": [
+    [
+     0,
+     7,
+     "Offline data authentication was not performed"
+    ],
+    [
+     0,
+     6,
+     "SDA failed"
+    ],
+    [
+     0,
+     5,
+     "ICC data missing"
+    ],
+    [
+     0,
+     4,
+     "Card on terminal exception file"
+    ],
+    [
+     0,
+     3,
+     "DDA failed"
+    ],
+    [
+     0,
+     2,
+     "CDA failed"
+    ],
+    [
+     1,
+     7,
+     "ICC and terminal have different application versions"
+    ],
+    [
+     1,
+     6,
+     "Expired application"
+    ],
+    [
+     1,
+     5,
+     "Application not yet effective"
+    ],
+    [
+     1,
+     4,
+     "Requested service not allowed for card product"
+    ],
+    [
+     1,
+     3,
+     "New card"
+    ],
+    [
+     2,
+     7,
+     "Cardholder verification was not successful"
+    ],
+    [
+     2,
+     6,
+     "Unrecognised CVM"
+    ],
+    [
+     2,
+     5,
+     "PIN Try Limit exceeded"
+    ],
+    [
+     2,
+     4,
+     "PIN entry required but no PIN pad / not working"
+    ],
+    [
+     2,
+     3,
+     "PIN entry required, PIN pad present, PIN not entered"
+    ],
+    [
+     2,
+     2,
+     "Online PIN entered"
+    ],
+    [
+     3,
+     7,
+     "Transaction exceeds floor limit"
+    ],
+    [
+     3,
+     6,
+     "Lower consecutive offline limit exceeded"
+    ],
+    [
+     3,
+     5,
+     "Upper consecutive offline limit exceeded"
+    ],
+    [
+     3,
+     4,
+     "Transaction selected randomly for online processing"
+    ],
+    [
+     3,
+     3,
+     "Merchant forced transaction online"
+    ],
+    [
+     4,
+     7,
+     "Default TDOL used"
+    ],
+    [
+     4,
+     6,
+     "Issuer authentication failed"
+    ],
+    [
+     4,
+     5,
+     "Script processing failed before final Gen AC"
+    ],
+    [
+     4,
+     4,
+     "Script processing failed after final Gen AC"
+    ]
+   ]
+  },
+  "TSI": {
+   "len": 2,
+   "bits": [
+    [
+     0,
+     7,
+     "Offline data authentication was performed"
+    ],
+    [
+     0,
+     6,
+     "Cardholder verification was performed"
+    ],
+    [
+     0,
+     5,
+     "Card risk management was performed"
+    ],
+    [
+     0,
+     4,
+     "Issuer authentication was performed"
+    ],
+    [
+     0,
+     3,
+     "Terminal risk management was performed"
+    ],
+    [
+     0,
+     2,
+     "Script processing was performed"
+    ]
+   ]
+  },
+  "CID": {
+   "len": 1
+  },
+  "TTQ": {
+   "len": 4,
+   "bits": [
+    [
+     0,
+     7,
+     "Mag-stripe mode supported"
+    ],
+    [
+     0,
+     5,
+     "EMV mode supported"
+    ],
+    [
+     0,
+     4,
+     "EMV contact chip supported"
+    ],
+    [
+     0,
+     3,
+     "Offline-only reader"
+    ],
+    [
+     0,
+     2,
+     "Online PIN supported"
+    ],
+    [
+     0,
+     1,
+     "Signature supported"
+    ],
+    [
+     0,
+     0,
+     "Offline Data Authentication (ODA) for Online Auths supported"
+    ],
+    [
+     1,
+     7,
+     "Online cryptogram required"
+    ],
+    [
+     1,
+     6,
+     "CVM required"
+    ],
+    [
+     1,
+     5,
+     "(Contact Chip) Offline PIN supported"
+    ],
+    [
+     2,
+     7,
+     "Issuer Update Processing supported"
+    ],
+    [
+     2,
+     6,
+     "Consumer Device CVM supported"
+    ]
+   ]
+  },
+  "CTQ": {
+   "len": 2,
+   "bits": [
+    [
+     0,
+     7,
+     "Online PIN required"
+    ],
+    [
+     0,
+     6,
+     "Signature required"
+    ],
+    [
+     0,
+     5,
+     "Go online if ODA fails and reader is online capable"
+    ],
+    [
+     0,
+     4,
+     "Switch interface if ODA fails and reader supports contact chip"
+    ],
+    [
+     0,
+     3,
+     "Go online if application expired"
+    ],
+    [
+     0,
+     2,
+     "Switch interface for cash transactions"
+    ],
+    [
+     0,
+     1,
+     "Switch interface for cashback transactions"
+    ],
+    [
+     1,
+     7,
+     "Consumer Device CVM performed"
+    ],
+    [
+     1,
+     6,
+     "Card supports Issuer Update Processing at the POS"
+    ]
+   ]
+  },
+  "TERMCAP": {
+   "len": 3,
+   "bits": [
+    [
+     0,
+     7,
+     "Manual key entry"
+    ],
+    [
+     0,
+     6,
+     "Magnetic stripe"
+    ],
+    [
+     0,
+     5,
+     "IC with contacts"
+    ],
+    [
+     1,
+     7,
+     "Plaintext PIN for ICC verification"
+    ],
+    [
+     1,
+     6,
+     "Enciphered PIN for online verification"
+    ],
+    [
+     1,
+     5,
+     "Signature (paper)"
+    ],
+    [
+     1,
+     4,
+     "Enciphered PIN for offline verification"
+    ],
+    [
+     1,
+     3,
+     "No CVM required"
+    ],
+    [
+     2,
+     7,
+     "SDA"
+    ],
+    [
+     2,
+     6,
+     "DDA"
+    ],
+    [
+     2,
+     5,
+     "Card capture"
+    ],
+    [
+     2,
+     3,
+     "CDA"
+    ]
+   ]
+  }
+ },
+ "rids": {
+  "A000000003": {
+   "scheme": "Visa",
+   "region": "International"
+  },
+  "A000000004": {
+   "scheme": "Mastercard",
+   "region": "International"
+  },
+  "A000000025": {
+   "scheme": "American Express",
+   "region": "International"
+  },
+  "A000000065": {
+   "scheme": "JCB",
+   "region": "International"
+  },
+  "A000000152": {
+   "scheme": "Discover / Diners Club International",
+   "region": "International"
+  },
+  "A000000324": {
+   "scheme": "Discover (D-PAS)",
+   "region": "United States"
+  },
+  "A000000333": {
+   "scheme": "UnionPay (China UnionPay)",
+   "region": "China"
+  },
+  "A000000277": {
+   "scheme": "Interac",
+   "region": "Canada"
+  },
+  "A000000098": {
+   "scheme": "Visa (Debit, US Common)",
+   "region": "United States"
+  },
+  "A000000228": {
+   "scheme": "VeriFone / proprietary",
+   "region": "Various"
+  },
+  "A0000006581010": {
+   "scheme": "Meeza",
+   "region": "Egypt"
+  },
+  "A0000005241010": {
+   "scheme": "RuPay",
+   "region": "India"
+  },
+  "A000000337": {
+   "scheme": "PBOC / quasi-Cash",
+   "region": "China"
+  },
+  "A000000620": {
+   "scheme": "JCB Quic",
+   "region": "Japan"
+  }
+ },
+ "aids": {
+  "A0000000031010": "Visa Credit/Debit (classic)",
+  "A0000000032010": "Visa Electron",
+  "A0000000033010": "Visa Interlink",
+  "A0000000038010": "Visa Plus",
+  "A0000000980840": "Visa US Common Debit",
+  "A0000000041010": "Mastercard Credit/Debit",
+  "A0000000042010": "Mastercard Specific",
+  "A0000000043060": "Maestro (Debit)",
+  "A0000000046000": "Cirrus",
+  "A00000000410101213": "Mastercard Credit",
+  "A00000000410101215": "Mastercard Credit",
+  "A0000000980848": "Common US Debit (Mastercard-routed)",
+  "A00000002501": "American Express",
+  "A0000000250109": "American Express",
+  "A0000000651010": "JCB",
+  "A0000001523010": "Discover (Diners Club Int'l)",
+  "A0000001524010": "Discover Common Debit",
+  "A0000003241010": "Discover D-PAS",
+  "A000000333010101": "UnionPay Debit",
+  "A000000333010102": "UnionPay Credit",
+  "A000000333010103": "UnionPay Quasi-credit",
+  "A0000002771010": "Interac",
+  "A0000006581010": "Meeza (Egypt)",
+  "A0000005241010": "RuPay (India)"
+ }
+}

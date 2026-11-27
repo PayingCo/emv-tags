@@ -1,0 +1,14 @@
+{
+  "name": "emv-tags",
+  "version": "1.0.0",
+  "description": "EMV tag dictionary, BER-TLV parser, AIP/TVR bit decoders and AID lookup. Zero dependencies. From the Paying.co developer tools.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": ["src"],
+  "scripts": { "test": "node test/test.js", "build-data": "node scripts/build-data.js ../render-paying-co/public/tools/assets/emv-data.js" },
+  "keywords": ["emv", "tlv", "ber-tlv", "payments", "smart-card", "aid", "iso-8583", "pos", "terminal"],
+  "license": "MIT",
+  "homepage": "https://paying.co/tools/emv-tag-lookup/",
+  "repository": { "type": "git", "url": "git+https://github.com/PayingCo/emv-tags.git" },
+  "author": "Paying.co <https://paying.co>"
+}
