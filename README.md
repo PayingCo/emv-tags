@@ -1,5 +1,7 @@
 # emv-tags
 
+[![npm](https://img.shields.io/npm/v/emv-tags)](https://www.npmjs.com/package/emv-tags) [![license](https://img.shields.io/npm/l/emv-tags)](LICENSE)
+
 EMV tag dictionary, BER-TLV parser, bit-flag decoders (AIP, TVR and more) and AID lookup. Zero dependencies, runs in Node and the browser.
 
 Built and maintained by [Paying.co](https://paying.co), a payment engineering firm specializing in EMV Level 3 certification. The same data powers our free browser tools: [EMV tag lookup](https://paying.co/tools/emv-tag-lookup/), [TLV parser](https://paying.co/tools/emv-tlv-parser/) and [ISO 8583 decoder](https://paying.co/tools/iso8583-decoder/).
